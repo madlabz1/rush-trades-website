@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme inline {
+  --color-orange: #FF6B00;
+  --color-orange-dark: #E55D00;
+  --color-orange-light: #FF8533;
+  --color-navy: #1A1A2E;
+  --color-navy-light: #2D2D44;
+  --color-background: #ffffff;
+  --color-foreground: #1A1A2E;
+  --font-heading: 'Oswald', sans-serif;
+  --font-sans: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background: var(--background, #ffffff);
+  color: var(--color-navy);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
