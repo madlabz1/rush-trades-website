@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function ForTradespeople() {
@@ -42,8 +43,15 @@ export default function ForTradespeople() {
       {/* Header */}
       <header className="border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-          <Link href="/" className="text-2xl font-heading font-bold text-navy">
-            ⚡ RUSH TRADES
+          <Link href="/">
+            <Image
+              src="/rush-trades-logo.jpg"
+              alt="Rush Trades"
+              width={200}
+              height={50}
+              className="h-10 w-auto"
+              priority
+            />
           </Link>
           <Link
             href="/"
