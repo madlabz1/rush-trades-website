@@ -10,12 +10,20 @@ export default function Home() {
           <Link href="/" className="text-2xl font-heading font-bold text-navy">
             ⚡ RUSH TRADES
           </Link>
-          <a
-            href={PHONE_HREF}
-            className="bg-orange hover:bg-orange-dark text-white font-semibold px-6 py-3 rounded-lg transition-colors"
-          >
-            Call Now
-          </a>
+          <div className="flex items-center gap-4">
+            <Link
+              href="/for-tradespeople"
+              className="text-gray-600 hover:text-navy font-semibold transition-colors hidden sm:inline"
+            >
+              For Tradespeople
+            </Link>
+            <a
+              href={PHONE_HREF}
+              className="bg-orange hover:bg-orange-dark text-white font-semibold px-6 py-3 rounded-lg transition-colors"
+            >
+              Call Now
+            </a>
+          </div>
         </div>
       </header>
 
@@ -186,7 +194,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-navy-light text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             <div>
               <h3 className="font-heading text-xl font-bold mb-4">
                 Rush Trades
@@ -210,6 +218,16 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
+            </div>
+            <div>
+              <h3 className="font-heading text-xl font-bold mb-4">For Tradespeople</h3>
+              <p className="text-gray-400 mb-2">Want to receive emergency leads?</p>
+              <Link
+                href="/for-tradespeople"
+                className="text-orange font-bold hover:text-orange-light transition-colors"
+              >
+                Get 3 Free Leads →
+              </Link>
             </div>
             <div>
               <h3 className="font-heading text-xl font-bold mb-4">Contact</h3>
